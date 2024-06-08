@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color-black: black;
+  --text-color-white: white;
+}
+
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+  /* ... (styles) ... */
+  color: var(--text-color-black);
+}
+
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+  /* ... (styles) ... */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  /* ... (styles) ... */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  /* ... (styles) ... */
+}
+
+table.dataTable.no-footer {
+  /* ... (styles) ... */
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  /* ... (styles) ... */
+  color: var(--text-color-white);
+}
+
+/* New styles for action buttons */
+.table-actions button {
+  margin-right: 0.5rem;
+  /* ... (styles) ... */
+}
